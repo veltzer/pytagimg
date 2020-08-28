@@ -1,0 +1,11 @@
+improve the symlink install operation to be smarter:
+- don't install every symlink.
+	- If the symlink already exists and is pointing at the right
+	place then do nothing.
+	- If the symlink already exists and is pointing at the wrong
+	place then remove it and put the right symlink in.
+	- If the symlink doesn't exists then install the new symlink.
+- check if there are old symlinks to remove
+	scan the target folder and for every symlink that points
+	to the source folder that is not currently available - remove
+	that symlink.
