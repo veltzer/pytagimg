@@ -1,2 +1,4 @@
 """ version which can be consumed from within the module """
 VERSION_STR = "0.0.1"
+DESCRIPTION = "pytagimg helps tag images fast"
+APP_NAME = "pytagimg"

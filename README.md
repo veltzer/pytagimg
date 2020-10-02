@@ -16,6 +16,8 @@
 ![Downloads](https://pepy.tech/badge/pytagimg/month)
 ![Downloads](https://pepy.tech/badge/pytagimg/week)
 
+[![Known Vulnerabilities](https://snyk.io/test/github/veltzer/pytagimg/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/veltzer/pytagimg?targetFile=requirements.txt)
+
 
 
 pytagimg helps tag images fast
