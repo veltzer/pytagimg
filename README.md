@@ -19,10 +19,13 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/veltzer/pytagimg/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/veltzer/pytagimg?targetFile=requirements.txt)
 
 
+Actions
+
+![build](https://github.com/veltzer/pytagimg/workflows/build/badge.svg)
 
 pytagimg helps tag images fast
 
-project website: <https://veltzer.github.io/pytagimg>
+project website: https://veltzer.github.io/pytagimg
 
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
