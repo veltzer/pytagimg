@@ -12,7 +12,6 @@ setuptools.setup(
     version="0.0.1",
     packages=[
         'pytagimg',
-        'pytagimg.endpoints',
     ],
     # from here all is optional
     description="pytagimg helps tag images fast",
@@ -54,7 +53,7 @@ setuptools.setup(
     data_files=[
     ],
     entry_points={"console_scripts": [
-        'pytagimg=pytagimg.endpoints.main:main',
+        'pytagimg=pytagimg.main:main',
     ]},
     python_requires=">=3.6",
 )

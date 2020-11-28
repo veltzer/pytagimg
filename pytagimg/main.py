@@ -4,37 +4,12 @@ The default group of operations that pytagimg has
 
 import os  # for walk, getcwd, symlink, listdir, unlink, mkdir
 import os.path  # for join, expanduser, realpath, abspath, islink, isdir, isfile
-import sys
 
-from pytconf import register_endpoint, register_function_group
+import pylogconf.core
+from pytconf import register_endpoint, get_free_args, register_main, config_arg_parse_and_launch
 
 from pytagimg.configs import ConfigSymlinkInstall, ConfigRemoveFolders
-
-import pytagimg
-import pytagimg.version
-
-GROUP_NAME_DEFAULT = "default"
-GROUP_DESCRIPTION_DEFAULT = "all pytagimg commands"
-
-
-def register_group_default():
-    """
-    register the name and description of this group
-    """
-    register_function_group(
-        function_group_name=GROUP_NAME_DEFAULT,
-        function_group_description=GROUP_DESCRIPTION_DEFAULT,
-    )
-
-
-@register_endpoint(
-    group=GROUP_NAME_DEFAULT,
-)
-def version() -> None:
-    """
-    Print version
-    """
-    print(pytagimg.version.VERSION_STR)
+from pytagimg.static import APP_NAME, VERSION_STR
 
 
 def debug(msg):
@@ -71,15 +46,12 @@ def file_gen(root_folder: str, recurse: bool):
 
 
 @register_endpoint(
+    description="Install symlinks to things in a folder",
     configs=[
         ConfigSymlinkInstall,
     ],
-    group=GROUP_NAME_DEFAULT,
 )
 def symlink_install() -> None:
-    """
-    Install symlinks to things in a folder
-    """
     cwd = os.getcwd()
     if os.path.isdir(ConfigSymlinkInstall.target_folder):
         for file in os.listdir(ConfigSymlinkInstall.target_folder):
@@ -104,14 +76,28 @@ def symlink_install() -> None:
 
 
 @register_endpoint(
+    description="Remove folders",
     configs=[
         ConfigRemoveFolders,
     ],
-    group=GROUP_NAME_DEFAULT,
 )
 def remove_folders() -> None:
     result = []
-    for f in sys.argv.filenames:
+    for f in get_free_args():
         r = os.path.splitext(os.sep.join(f.split(os.sep)[1:]))[0]
         result.append(r)
     print(' '.join(result), end='')
+
+
+@register_main(
+    main_description="pytagimg will help you tag images",
+    app_name=APP_NAME,
+    version=VERSION_STR,
+)
+def main():
+    pylogconf.core.setup()
+    config_arg_parse_and_launch()
+
+
+if __name__ == '__main__':
+    main()
