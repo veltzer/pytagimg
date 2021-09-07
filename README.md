@@ -14,7 +14,6 @@
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 ![build](https://github.com/veltzer/pytagimg/workflows/build/badge.svg)
-
 pytagimg helps tag images fast
 
 project website: https://veltzer.github.io/pytagimg
