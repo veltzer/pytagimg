@@ -24,7 +24,7 @@ def do_install(source, target):
         if os.path.islink(target):
             os.unlink(target)
     if ConfigSymlinkInstall.doit:
-        debug('symlinking [{0}], [{1}]'.format(source, target))
+        debug(f"symlinking [{source}], [{target}]")
         os.symlink(source, target)
 
 
@@ -60,7 +60,7 @@ def symlink_install() -> None:
                 link_target = os.path.realpath(full)
                 if link_target.startswith(cwd):
                     if ConfigSymlinkInstall.doit:
-                        debug('unlinking [{0}]'.format(full))
+                        debug(f"unlinking [{full}]")
                         os.unlink(full)
     else:
         os.mkdir(ConfigSymlinkInstall.target_folder)
