@@ -3,38 +3,29 @@ import config.project
 package_name = config.project.project_name
 
 console_scripts = [
-    'pytagimg=pytagimg.main:main',
-]
-
-setup_requires = [
+    "pytagimg=pytagimg.main:main",
 ]
 
 run_requires = [
-    'pytconf',
-    'pylogconf',
+    "pytconf",
+    "pylogconf",
 ]
 
 test_requires = [
-    'pylint',
-    'pytest',
-    'pytest-cov',
-    'pyflakes',
-    'flake8',
-    'pymakehelper',
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "pyflakes",
+    "flake8",
+    "pymakehelper",
 ]
 
 dev_requires = [
-    'pyclassifiers',
-    'pypitools',
-    'pydmt',
-    'Sphinx',
+    "pyclassifiers",
+    "pypitools",
+    "pydmt",
+    "Sphinx",
 ]
-
-install_requires = list(setup_requires)
-install_requires.extend(run_requires)
-
-extras_require = {
-}
 
 python_requires = ">=3.9"
 test_os = ["ubuntu-20.04"]
