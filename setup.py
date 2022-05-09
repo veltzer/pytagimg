@@ -31,6 +31,10 @@ setuptools.setup(
     platforms=[
         'python3',
     ],
+    install_requires=[
+        'pytconf',
+        'pylogconf',
+    ],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
@@ -47,5 +51,5 @@ setuptools.setup(
     entry_points={"console_scripts": [
         'pytagimg=pytagimg.main:main',
     ]},
-    python_requires=">=3.9",
+    python_requires=">=3.10",
 )
