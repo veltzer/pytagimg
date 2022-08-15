@@ -22,8 +22,8 @@ setuptools.setup(
     maintainer="Mark Veltzer",
     maintainer_email="mark.veltzer@gmail.com",
     keywords=[
-        'make',
-        'scons',
+        'images',
+        'photos',
     ],
     url="https://veltzer.github.io/pytagimg",
     download_url="https://github.com/veltzer/pytagimg",
