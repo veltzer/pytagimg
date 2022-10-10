@@ -2,10 +2,13 @@ console_scripts = [
     "pytagimg=pytagimg.main:main",
 ]
 dev_requires = [
-    "pyclassifiers",
     "pypitools",
+]
+make_requires = [
+    "pyclassifiers",
     "pydmt",
     "Sphinx",
+    "pymakehelper",
 ]
 install_requires = [
     "pytconf",
@@ -17,6 +20,5 @@ test_requires = [
     "pytest-cov",
     "pyflakes",
     "flake8",
-    "pymakehelper",
     "mypy",
 ]
