@@ -1,4 +1,4 @@
-description_short = "pytagimg helps tag images fast"
+description_short = "Pytagimg helps you tag images fast"
 keywords = [
     "images",
     "photos",

@@ -1,5 +1,5 @@
 """ version which can be consumed from within the module """
-VERSION_STR = "0.0.2"
-DESCRIPTION = "pytagimg helps tag images fast"
+VERSION_STR = "0.0.3"
+DESCRIPTION = "Pytagimg helps you tag images fast"
 APP_NAME = "pytagimg"
 LOGGER_NAME = "pytagimg"

@@ -1,7 +1,7 @@
 import pylogconf.core
 from pytconf import register_endpoint, register_main, config_arg_parse_and_launch
 
-from pytagimg.static import APP_NAME, VERSION_STR
+from pytagimg.static import APP_NAME, VERSION_STR, DESCRIPTION
 
 
 @register_endpoint(
@@ -14,7 +14,7 @@ def run() -> None:
 
 
 @register_main(
-    main_description="pytagimg will help you tag images",
+    main_description=DESCRIPTION,
     app_name=APP_NAME,
     version=VERSION_STR,
 )

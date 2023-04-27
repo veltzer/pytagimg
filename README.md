@@ -1,12 +1,12 @@
 # *pytagimg* project by Mark Veltzer
 
-description: pytagimg helps tag images fast
+description: Pytagimg helps you tag images fast
 
 project website: https://veltzer.github.io/pytagimg
 
 author: Mark Veltzer
 
-version: 0.0.2
+version: 0.0.3
 
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
