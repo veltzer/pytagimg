@@ -4,18 +4,19 @@ from typing import List
 console_scripts: List[str] = [
     "pytagimg=pytagimg.main:main",
 ]
-config_requires: List[str] = []
 dev_requires = [
     "pypitools",
 ]
-make_requires: List[str] = [
+config_requires: List[str] = [
     "pyclassifiers",
-    "pydmt",
-    "pymakehelper",
 ]
 install_requires: List[str] = [
     "pytconf",
     "pylogconf",
+]
+make_requires: List[str] = [
+    "pydmt",
+    "pymakehelper",
 ]
 test_requires: List[str] = [
     "pylint",
