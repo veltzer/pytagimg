@@ -12,6 +12,6 @@ project website: https://veltzer.github.io/pytagimg
 
 author: Mark Veltzer
 
-version: 0.0.3
+version: 0.0.4
 
 	Mark Veltzer <mark.veltzer@gmail.com>, Copyright © 2020, 2021, 2022, 2023, 2024
