@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pytagimg"
+version = "0.0.4"
+requires-python = ">=3.12"
+authors = [
+	{ name = "Mark Veltzer", email = "mark.veltzer@gmail.com" }
+]
+maintainers = [
+	{ name = "Mark Veltzer", email = "mark.veltzer@gmail.com" }
+]
+description = "Pytagimg helps you tag images fast"
+readme = "README.md"
+license = "MIT"
+keywords=[
+    "images",
+    "photos",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "pytconf",
+    "pylogconf",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/veltzer/pytagimg"
+"Bug Tracker" = "https://github.com/veltzer/pytagimg/issues"
+"Documentation" = "https://veltzer.github.io/pytagimg"
+"Download" = "https://pypi.org/project/pytagimg/"
+"Repository" = "https://github.com/veltzer/pytagimg"
+
+[project.scripts]
+pytagimg = "pytagimg.main:main"
+
+[tool.ruff]
+line-length = 130
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

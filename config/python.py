@@ -1,8 +1,8 @@
 """ python deps for this project """
 
-console_scripts: list[str] = [
-    "pytagimg=pytagimg.main:main",
-]
+scripts: dict[str,str] = {
+    "pytagimg": "pytagimg.main:main",
+}
 
 config_requires: list[str] = [
     "pyclassifiers",
