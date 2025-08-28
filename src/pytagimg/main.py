@@ -27,5 +27,5 @@ def main():
     config_arg_parse_and_launch()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
