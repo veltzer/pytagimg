@@ -3,9 +3,9 @@ pytagimg.py
 """
 
 import pylogconf.core
-from pytconf import register_endpoint, register_main, config_arg_parse_and_launch
+from pytconf import config_arg_parse_and_launch, register_endpoint, register_main
 
-from pytagimg.static import APP_NAME, VERSION_STR, DESCRIPTION
+from pytagimg.static import APP_NAME, DESCRIPTION, VERSION_STR
 
 
 @register_endpoint(
