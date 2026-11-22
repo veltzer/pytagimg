@@ -5,7 +5,7 @@
 
 description: Pytagimg helps you tag images fast
 
-project website: https://veltzer.github.io/pytagimg
+project website: <https://veltzer.github.io/pytagimg>
 
 author: Mark Veltzer
 
